@@ -16,5 +16,216 @@
   </head>
   <body>
 
+    <div class="container">
+      <!--- title -->
+      <div class="row">
+        <div class="cart-title col-xs-12">
+          <h1>
+          Shopping Cart
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- items -->
+    <div id="cart" class="container">
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Oat milk
+        </div>
+        <div class="item-price col-xs-3">
+          $4.99
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Free Range Eggs
+        </div>
+        <div class="item-price col-xs-3">
+          $5.35
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Avocados
+        </div>
+        <div class="item-price col-xs-3">
+          $2.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Oranges
+        </div>
+        <div class="item-price col-xs-3">
+          $1.30
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Sourdough Bread
+        </div>
+        <div class="item-price col-xs-3">
+          $6.50
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Blueberries
+        </div>
+        <div class="item-price col-xs-3">
+          $4.99
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Kombucha
+        </div>
+        <div class="item-price col-xs-3">
+          $9.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-xs-3">
+          Kale
+        </div>
+        <div class="item-price col-xs-3">
+          $3.00
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button class="remove">
+            Remove
+          </button>
+        </div>
+        <div class="item-subtotal col-xs-2">
+        $____
+        </div>
+      </div>
+
+      <!-- add new item -->
+      <div class="row item new">
+        <div class="col-xs-3">
+          <input placeholder="item name" id="name">
+        </div>
+        <div class="col-xs-3">
+          <input placeholder="item price" id="cost">
+        </div>
+        <div class="item-qty col-xs-3">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="col-xs-1">
+          <button id="add">
+            Add
+          </button>
+        </div>
+        <div class="col-xs-1 col-xs-offset-2">
+        </div>
+      </div>
+
+    <!-- cart subtotal & tax -->
+    <div class="row">
+      <h2 id="cart-subtotal">Subtotal:</h2>
+      <p id="gst">GST:</p>
+      <p id ="pst">PST:</p>
+      <h2 id="cart-total">Total:</h2>
+    </div>
+
+    </div>
   </body>
 </html>
