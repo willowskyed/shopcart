@@ -5,19 +5,30 @@ $(document).ready(function() {
   function sum () {
     var prices = $('.item-price');
     var quantity = $('.quantity');
-    /* change element quantity to an integer, multiply by price, add to sum */
+    /* turn quantity into an integer, multiply by price, add to sum */
     for (i = 0; i < quantity.length; i++) {
       var price = Number($(prices[i]).text().replace(/\$/,""));
       var subtotal = (Number($(quantity[i]).val())) * price;
       if (subtotal != 0) {
         $($('.item-subtotal')[i]).text("$" + subtotal);
       } else {
-        $($('.item-subtotal')[i]).text("$____");
+        $($('.item-subtotal')[i]).text("$");
       }
       total += subtotal;
     };
+    $('#cart-subtotal').text("$" + total);
     return total;
   };
+  /* tax & cart total functions */
+  function calcTax (total) {
+    var gst = (total * 0.05) - total;
+    $('#gst').text("$ " + gst);
+  };
+  function cartTotal () {
+    var totalWithTax = total + gst;
+    $('#cart-total').text("$ " + totalWithTax);
+  };
+
 
   /* add new item */
   function addItem (name, cost) {
@@ -33,28 +44,15 @@ $(document).ready(function() {
         <label>QTY</label> \
         <input class="quantity"> \
       </div> \
+      <div class="item-subtotal col-xs-2"> \
+      $ \
+      </div> \
       <div class="col-xs-1"> \
         <button class="remove"> \
-          Remove \
+          <i class="fas fa-trash"></i> \
         </button> \
       </div> \
-      <div class="item-subtotal col-xs-2"> \
-      $____ \
-      </div> \
     </div>');
-  };
-
-  /* cart subtotal, tax, & cart total functions */
-  function cartSubtotal () {
-
-  };
-
-  function addtax () {
-
-  };
-
-  function cartTotal () {
-
   };
 
   /* event handlers */
@@ -74,6 +72,8 @@ $(document).ready(function() {
   $(document).on('keydown', '#cost', function(e) {
     if (e.which == 13) { // when user presses enter key
       addItem($('#name').val(), $('#cost').val());
+      calcTax();
+      cartTotal();
     };
   });
 

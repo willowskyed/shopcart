@@ -7,225 +7,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/application.js"></script>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- links -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-image: url('./images/background-img.jpg');">
 
-    <div class="container">
-      <!--- title -->
-      <div class="row">
-        <div class="cart-title col-xs-12">
-          <h1>
-          Shopping Cart
-          </h1>
-        </div>
-      </div>
-    </div>
-    <!-- items -->
-    <div id="cart" class="container">
-      <!-- item -->
-      <div class="row item">
-        <div class="item-name col-xs-3">
-          Oat milk
-        </div>
-        <div class="item-price col-xs-3">
-          $4.99
-        </div>
-        <div class="item-qty col-xs-3">
-          <label>QTY</label>
-          <input class="quantity">
-        </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
-        </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+    <div id="cart" class="container border">
+      <div class="row title">
+        <div class="col">
+          <h2>Checkout</h2>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Free Range Eggs
+        <div class="item-name col-4">
+          Monstera Deliciosa
         </div>
-        <div class="item-price col-xs-3">
-          $5.35
+        <div class="item-price col">
+          $65
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
+        <div class="item-subtotal col">
+        $
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Avocados
+        <div class="item-name col-4">
+          Alocasia Amazonica
         </div>
-        <div class="item-price col-xs-3">
-          $2.00
+        <div class="item-price col">
+          $30
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
+        <div class="item-subtotal col">
+        $
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Oranges
+        <div class="item-name col-4">
+          Pilea Peperomioides
         </div>
-        <div class="item-price col-xs-3">
-          $1.30
+        <div class="item-price col">
+          $25
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
+        <div class="item-subtotal col">
+        $
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Sourdough Bread
+        <div class="item-name col-4">
+          Strelitzia Reginae
         </div>
-        <div class="item-price col-xs-3">
-          $6.50
+        <div class="item-price col">
+          $100
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
+        <div class="item-subtotal col">
+        $
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Blueberries
+        <div class="item-name col-4">
+          Anthurium Andraeanum
         </div>
-        <div class="item-price col-xs-3">
-          $4.99
+        <div class="item-price col">
+          $30
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
+        <div class="item-subtotal col">
+        $
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Kombucha
+        <div class="item-name col-4">
+          Croton Petra
         </div>
-        <div class="item-price col-xs-3">
-          $9.00
+        <div class="item-price col">
+          $18
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
-          </button>
+        <div class="item-subtotal col">
+        $
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
       <!-- item -->
       <div class="row item">
-        <div class="item-name col-xs-3">
-          Kale
+        <div class="item-name col-4">
+          Ficus Lyrata
         </div>
-        <div class="item-price col-xs-3">
-          $3.00
+        <div class="item-price col">
+          $90
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button class="remove">
-            Remove
+        <div class="item-subtotal col">
+        $
+        </div>
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
           </button>
         </div>
-        <div class="item-subtotal col-xs-2">
-        $____
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-4">
+          Stromanthe Tricolor
+        </div>
+        <div class="item-price col">
+          $20
+        </div>
+        <div class="item-qty col">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="item-subtotal col">
+        $
+        </div>
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-4">
+          Tradescantia Nanouk
+        </div>
+        <div class="item-price col">
+          $15
+        </div>
+        <div class="item-qty col">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="item-subtotal col">
+        $
+        </div>
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-4">
+          Zamioculcas Zamiifolia
+        </div>
+        <div class="item-price col">
+          $40
+        </div>
+        <div class="item-qty col">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="item-subtotal col">
+        $
+        </div>
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <!-- item -->
+      <div class="row item">
+        <div class="item-name col-4">
+          Philodendron Ginny
+        </div>
+        <div class="item-price col">
+          $35
+        </div>
+        <div class="item-qty col">
+          <label>QTY</label>
+          <input class="quantity">
+        </div>
+        <div class="item-subtotal col">
+        $
+        </div>
+        <div class="col">
+          <button class="remove btn btn-link">
+            <i class="fas fa-trash"></i>
+          </button>
         </div>
       </div>
 
       <!-- add new item -->
-      <div class="row item new">
-        <div class="col-xs-3">
-          <input placeholder="item name" id="name">
+      <div class="row item mb-4">
+        <div class="col-4">
+          <input placeholder="Item name" id="name">
         </div>
-        <div class="col-xs-3">
-          <input placeholder="item price" id="cost">
+        <div class="col">
+          <input placeholder="Price" id="cost">
         </div>
-        <div class="item-qty col-xs-3">
+        <div class="item-qty col">
           <label>QTY</label>
           <input class="quantity">
         </div>
-        <div class="col-xs-1">
-          <button id="add">
-            Add
-          </button>
+        <div class="item-subtotal col">
+          $
         </div>
-        <div class="col-xs-1 col-xs-offset-2">
+        <div class="col">
+          <button id="add" class="btn btn-link">
+            <i class="fas fa-cart-plus"></i>
+          </button>
         </div>
       </div>
 
-    <!-- cart subtotal & tax -->
+   <!-- cart subtotal & tax -->
+   <div class="row">
+      <div class="col-2 offset-6">
+        <h3>Subtotal: </h3>
+      </div>
+      <div class="col">
+        <p id="cart-subtotal">$</p>
+      </div>
+    </div>
     <div class="row">
-      <h2 id="cart-subtotal">Subtotal:</h2>
-      <p id="gst">GST:</p>
-      <p id ="pst">PST:</p>
-      <h2 id="cart-total">Total:</h2>
+      <div class="col-2 offset-6">
+        <h3>GST: </h3>
+      </div>
+      <div class="col">
+        <p id="gst">$</p>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-2 offset-6">
+        <h3>Total: </h3>
+      </div>
+      <div class="col">
+        <p id="cart-total">$</p>
+      </div>
     </div>
 
-    </div>
+</div>
+
   </body>
 </html>
