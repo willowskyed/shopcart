@@ -37,13 +37,13 @@ $(document).ready(function() {
   function addItem (name, cost) {
     name = name.charAt(0).toUpperCase() + name.slice(1);
     $('.new').prev().after('<div class="row item"> \
-      <div class="item-name col-4"> \ '
+      <div class="item-name col-5"> \ '
       +  name + '\
       </div> \
       <div class="item-price col"> \
         $' + cost + '.00 \
       </div> \
-      <div class="item-qty col"> \
+      <div class="item-qty col-2"> \
         <label>QTY</label> \
         <input class="quantity"> \
       </div> \
