@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   /* tax & cart total functions */
   function calcTax () {
-    var gst = (total * 0.05);
+    var gst = Math.round((total * 0.05) * 1000) / 1000;
     $('#gst').text("$ " + gst);
     return gst;
   };
